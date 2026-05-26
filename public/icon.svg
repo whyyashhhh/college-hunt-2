@@ -1,0 +1,21 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="96" y1="64" x2="416" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06b6d4" />
+      <stop offset="0.48" stop-color="#3b82f6" />
+      <stop offset="1" stop-color="#8b5cf6" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(176 156) rotate(48) scale(292 292)">
+      <stop stop-color="white" stop-opacity="0.24" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="120" fill="#09090B" />
+  <rect x="56" y="56" width="400" height="400" rx="104" fill="url(#bg)" />
+  <rect x="56" y="56" width="400" height="400" rx="104" fill="url(#glow)" />
+  <circle cx="256" cy="256" r="132" stroke="white" stroke-opacity="0.28" stroke-width="12" />
+  <path d="M256 144L182 256L256 368L330 256L256 144Z" fill="white" fill-opacity="0.94" />
+  <path d="M256 128V384" stroke="white" stroke-opacity="0.68" stroke-width="12" stroke-linecap="round" />
+  <path d="M162 296L256 138L350 296" stroke="white" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="256" y="318" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="140" font-weight="800" letter-spacing="18" fill="#09090B">CH</text>
+</svg>
