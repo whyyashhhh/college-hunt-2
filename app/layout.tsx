@@ -8,13 +8,25 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space-grotesk' });
 
+function getSiteUrl() {
+  if (process.env.NEXT_PUBLIC_APP_URL) {
+    return process.env.NEXT_PUBLIC_APP_URL;
+  }
+
+  if (process.env.VERCEL_URL) {
+    return `https://${process.env.VERCEL_URL}`;
+  }
+
+  return 'http://localhost:3000';
+}
+
 export const metadata: Metadata = {
   title: {
     default: 'CollegeHunt',
     template: '%s | CollegeHunt'
   },
   description: 'CollegeHunt is a premium AI college discovery and comparison platform for students in India.',
-  metadataBase: new URL('http://localhost:3000'),
+  metadataBase: new URL(getSiteUrl()),
   icons: {
     icon: '/icon.svg',
     apple: '/apple-icon.svg'
